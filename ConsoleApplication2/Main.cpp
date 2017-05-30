@@ -34,9 +34,10 @@ public:
 
 
 int main() {
+	int a;
 	Zwierze z1;
 	z1.dodaj_zwierze();
 	z1.daj_glos();
-	
+	cin >> a;
 	return 0;
 }
