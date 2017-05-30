@@ -1,43 +1,29 @@
 #include <iostream>
 #include <string>
+#include "pytanie.h"
 
 
 using namespace std;
 
-class Zwierze
-{
-public:
-	//atrybuty
-	string gatunek;
-	string imie;
-	int wiek;
-	//metody
-	void dodaj_zwierze() {
-		cout << "DODAWANIE ZWIERZA" << endl;
-		cout << "podaj gatunek: ";
-		cin >> gatunek;
-		cout << "podaj imie: ";
-		cin >> imie;
-		cout << "podaj wiek: ";
-		cin >> wiek;
-		
-	}
-	void daj_glos() {
-		if(gatunek=="kot") cout<<imie<<" lat "<<wiek<<": Maiu!";
-		else if (gatunek == "koza") cout << imie << " lat" << wiek << ": Beee!";
-		else if (gatunek == "krowa") cout << imie << " lat" << wiek << ": Buuu!";
-		else  cout << " nieznany gatunek moze jakies nawet ufo!? ";
-		cout << endl;
-	}
-	
-};
 
 
 int main() {
 	int a;
-	Zwierze z1;
-	z1.dodaj_zwierze();
-	z1.daj_glos();
+
+	Pytanie p[5];
+	int suma = 0;
+	for ( int i = 0; i <= 4; i++)
+	{
+		p[i].nr_pytania = i + 1;
+		p[i].wczytaj();
+		p[i].zadaj();
+		p[i].sprawdz();
+		suma += p[i].punkt;
+	}
+
+
+	cout << "Koniec! punkty: " << suma;
+
 	cin >> a;
 	return 0;
 }
