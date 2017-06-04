@@ -140,10 +140,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="pytanie.cpp" />
+    <ClCompile Include="event.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pytanie.h" />
+    <ClInclude Include="event.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

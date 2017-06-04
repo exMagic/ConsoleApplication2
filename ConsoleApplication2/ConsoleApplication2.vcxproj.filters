@@ -18,12 +18,12 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pytanie.cpp">
+    <ClCompile Include="event.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pytanie.h">
+    <ClInclude Include="event.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
